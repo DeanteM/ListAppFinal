@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_lists">
+
+    <fragment
+        android:id="@+id/navigation_lists"
+        android:name="com.example.listapp.ui.lists.ListsFragment"
+        android:label="@string/title_lists"
+        tools:layout="@layout/fragment_lists" />
+
+    <fragment
+        android:id="@+id/navigation_create"
+        android:name="com.example.listapp.ui.create.DashboardFragment"
+        android:label="@string/title_create" />
+
+    <fragment
+        android:id="@+id/navigation_entrys"
+        android:name="com.example.listapp.ui.Entrys.EntrysFragment"
+        android:label="@string/title_entrys"
+        tools:layout="@layout/fragment_entrys" />
+    <fragment
+        android:id="@+id/navigation_add_entry"
+        android:name="com.example.listapp.ui.AddEntryFragment"
+        android:label="@string/title_add_entry"
+        tools:layout="@layout/fragment_add_entry" />
+</navigation>

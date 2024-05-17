@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/editTextListName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="List Name"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#FF673AB7" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/editTextListName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/addimage"
+        android:textColor="#FFFFFF"
+        android:text="Select Image" />
+
+    <EditText
+        android:id="@+id/editTextListDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSelectImage"
+        android:layout_margin="16dp"
+        android:hint="List Description"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#FF673AB7" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextListDescription"
+        android:layout_marginStart="16dp"
+        android:text="Private"
+        android:textColor="#FF673AB7" />
+
+    <Spinner
+        android:id="@+id/spinnerRatingScale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxPrivate"
+        android:layout_margin="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="#FF673AB7"
+        android:entries="@array/rating_scales" />
+
+    <Button
+        android:id="@+id/buttonAddToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerRatingScale"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#FF673AB7"
+        android:paddingStart="32dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="12dp"
+        android:text="Add to List"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
